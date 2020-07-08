@@ -1,0 +1,19 @@
+---
+title: "ggplot2"
+author: "xxy905055476"
+date: "2020/7/6"
+output:
+  html_document: default
+  pdf_document: default
+---
+learn data visulization with'ggplot2'
+```{r setup, message=F, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(MASS)
+library(conflicted)
+```
+```{r, eval = F}
+ggplot(data = ca) + 
+  geom_point(aes(x = year, y = visitors))
+```
